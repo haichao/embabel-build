@@ -234,12 +234,9 @@
         </repository>
     </repositories>
     <distributionManagement>
-        <downloadUrl>https://github.com/embabel</downloadUrl>
-        <site>
-            <id>embabel-docs</id>
-            <url>
-                https:/docs.embabel.com/${project.artifactId}/docs/${project.version}/reference/html/
-            </url>
-        </site>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/embabel/embabel-build</url>
+        </repository>
     </distributionManagement>
 </project>
