@@ -463,7 +463,7 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <url>https://maven.pkg.github.com/embabel</url>
+            <url>https://maven.pkg.github.com/embabel/embabel-build</url>
         </repository>
     </distributionManagement>
 
