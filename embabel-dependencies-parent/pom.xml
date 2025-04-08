@@ -71,12 +71,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <distributionManagement>
-        <repository>
-            <id>github</id>
-            <url>https://maven.pkg.github.com/embabel/boogie-service</url>
-        </repository>
-    </distributionManagement>
     <build>
         <pluginManagement>
             <plugins>
@@ -126,4 +120,12 @@
             </plugins>
         </pluginManagement>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/embabel/embabel-build</url>
+        </repository>
+    </distributionManagement>
+
 </project>
