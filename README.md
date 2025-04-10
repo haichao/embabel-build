@@ -1,7 +1,7 @@
 # Embabel Build
 
 ## Overview
-Embabel Build is a comprehensive multi-module Maven project that provides a standardized build infrastructure for all Embabel projects. This parent POM centrally manages plugins and dependencies, ensuring consistency, quality, and compliance across the entire Embabel ecosystem while reducing redundant configuration and technical debt.
+Embabel Build is a comprehensive multi-module Maven project that provides a standardized build infrastructure for all Embabel projects. This parent POM centrally manages plugins and dependencies, ensuring consistency, quality, and compliance across the enleadtire Embabel ecosystem while reducing redundant configuration and technical debt.
 
 ## Project Structure
 The project is organized into the following modules:
@@ -221,8 +221,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute to this 
 
 The project is maintained by the Embabel development team:
 
-- Rod Johnson (Project Lead)
-- Alex Hein-Heifetz (Developer)
+- Rod Johnson (Founder and Project Lead)
+- Alex Hein-Heifetz (Lead)
 
 ## Links
 
