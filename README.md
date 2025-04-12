@@ -1,3 +1,11 @@
+![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+<img align="left" src="https://github.com/embabel/agent-api/blob/main/images/315px-Meister_der_Weltenchronik_001.jpg?raw=true" width="180">
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 # Embabel Build
 
 ## Overview
