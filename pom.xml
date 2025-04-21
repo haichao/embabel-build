@@ -128,6 +128,16 @@
                 <role>lead</role>
             </roles>
         </developer>
+        <developer>
+            <id>igordayen</id>
+            <name>Igor Dayen</name>
+            <email>idayen at embabel.com</email>
+            <organization>Embabel Software, Inc.</organization>
+            <organizationUrl>https://www.embabel.com</organizationUrl>
+            <roles>
+                <role>lead</role>
+            </roles>
+        </developer>
     </developers>
     <build>
         <pluginManagement>
