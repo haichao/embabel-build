@@ -98,6 +98,37 @@
                 <version>${kotlin.version}</version>
             </dependency>
 
+            <!-- Kotlin Scripting support -->
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-scripting-common</artifactId>
+                <version>${kotlin.version}</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-scripting-jvm</artifactId>
+                <version>${kotlin.version}</version>
+            </dependency>
+        
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-scripting-jvm-host</artifactId>
+                <version>${kotlin.version}</version>
+            </dependency>
+        
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-script-runtime</artifactId>
+                <version>${kotlin.version}</version>
+            </dependency>
+        
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-scripting-jsr223</artifactId>
+                <version>${kotlin.version}</version>
+            </dependency>
+
             <!-- Template Engine -->
             <dependency>
                 <groupId>com.hubspot.jinjava</groupId>
