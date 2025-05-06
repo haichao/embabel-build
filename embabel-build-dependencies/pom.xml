@@ -46,6 +46,8 @@
         <!-- Unit and Integration Testing -->
         <testcontainers.version>1.20.5</testcontainers.version>
         <springmockk.version>4.0.2</springmockk.version>
+        <!-- Build Plugins -->
+        <flatten-maven-plugin.version>1.7.0</flatten-maven-plugin.version>
     </properties>
 
     <dependencyManagement>
@@ -236,6 +238,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>flatten-maven-plugin</artifactId>
+                <version>${flatten-maven-plugin.version}</version>
                 <inherited>false</inherited>
                 <executions>
                     <execution>
