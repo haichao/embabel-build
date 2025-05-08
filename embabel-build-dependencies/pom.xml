@@ -20,6 +20,8 @@
         <!-- Kotlin Version and Compiler -->
         <kotlin.version>2.1.10</kotlin.version>
         <kotlin.compiler.apiVersion>2.1</kotlin.compiler.apiVersion>
+        <!-- Apache Commons -->
+        <apache-commons-text.version>1.10.0</apache-commons-text.version>
         <!-- AI Frameworks -->
         <spring-ai.version>1.0.0-SNAPSHOT</spring-ai.version>
         <spring-ai-mcp.version>0.5.1</spring-ai-mcp.version>
@@ -69,6 +71,13 @@
                 <scope>import</scope>
             </dependency>
 
+            <!-- Apache Commons -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-text</artifactId>
+                <version>${apache-commons-text.version}</version>
+            </dependency>
+            
             <!-- Spring Shell -->
             <dependency>
                 <groupId>org.springframework.shell</groupId>
