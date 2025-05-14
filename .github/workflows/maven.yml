@@ -26,11 +26,5 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
           cache: maven
-      - name: Configure Maven Settings
-        uses: s4u/maven-settings-action@v2.8.0
-        with:
-          servers: ${{secrets.GITREPO_WRITE_PACKAGE}}
-      - name: Build and analyze
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-        run: mvn deploy
+      - name: Validate Build Modules
+        run: mvn test

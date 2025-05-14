@@ -35,6 +35,9 @@
         <!-- Spring Boot -->
         <spring-boot.version>3.4.3</spring-boot.version>
 
+        <!-- Resource Delimiter -->
+        <resource.delimiter>@</resource.delimiter>
+    
         <!-- Embabel Build Version -->
         <embabel-build.version>1.0.0-SNAPSHOT</embabel-build.version>
 
@@ -45,6 +48,7 @@
         <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
         <maven-surefire-plugin.version>3.1.2</maven-surefire-plugin.version>
         <maven-dependency-plugin.version>3.8.1</maven-dependency-plugin.version>
+        <maven-enforcer-plugin.version>3.4.1</maven-enforcer-plugin.version>
         <flatten-maven-plugin.version>1.7.0</flatten-maven-plugin.version>
         <license-maven-plugin.version>2.5.0</license-maven-plugin.version>
         <git-commit-id-plugin.version>4.9.10</git-commit-id-plugin.version>
@@ -359,7 +363,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>flatten-maven-plugin</artifactId>
-                    <version>${flatten-maven-puglin.version}</version>
+                    <version>${flatten-maven-plugin.version}</version>
                     <inherited>true</inherited>
                     <executions>
                         <execution>
@@ -374,7 +378,7 @@
                                 <pomElements>
                                     <parent>expand</parent>
                                     <distributionManagement>remove</distributionManagement>
-                                    <repositories>remove</repositories>
+                                    <repositories>keep</repositories>
                                 </pomElements>
                             </configuration>
                         </execution>
@@ -522,6 +526,14 @@
 
     <repositories>
         <repository>
+            <id>embabel-snapshots</id>
+            <name>Embabel Snapshots</name>
+            <url>https://repo.embabel.com/libs-snapshot</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
             <url>https://repo.spring.io/milestone</url>
@@ -540,10 +552,10 @@
     </repositories>
 
     <distributionManagement>
-        <repository>
-            <id>github</id>
-            <url>https://maven.pkg.github.com/embabel/embabel-build</url>
-        </repository>
+        <snapshotRepository>
+            <id>embabel-snapshots</id>
+            <url>https://repo.embabel.com/artifactory/libs-snapshot/</url>
+        </snapshotRepository>
     </distributionManagement>
 
 

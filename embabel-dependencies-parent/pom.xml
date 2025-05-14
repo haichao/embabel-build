@@ -9,6 +9,13 @@
     <packaging>pom</packaging>
     <name>Embabel Dependencies Parent</name>
     <description>Embabel Dependencies for internal modules.</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <flatten-maven-plugin.version>1.7.0</flatten-maven-plugin.version>
+        <maven-enforcer-plugin.version>3.4.1</maven-enforcer-plugin.version>
+    </properties>
+    
     <url>https://embabel.com/embabel</url>
     <organization>
         <name>Embabel Software, Inc.</name>
@@ -68,16 +75,13 @@
             </roles>
         </developer>
     </developers>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
     <build>
         <pluginManagement>
             <plugins>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>flatten-maven-plugin</artifactId>
-                    <version>${flatten-maven-puglin.version}</version>
+                    <version>${flatten-maven-plugin.version}</version>
                     <inherited>true</inherited>
                     <executions>
                         <execution>
@@ -121,11 +125,24 @@
         </pluginManagement>
     </build>
 
-    <distributionManagement>
+    <repositories>
         <repository>
-            <id>github</id>
-            <url>https://maven.pkg.github.com/embabel/embabel-build</url>
+            <id>embabel-artifactory</id>
+            <url>https://repo.embabel.com/artifactory/libs-snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
         </repository>
+    </repositories>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>embabel-snapshots</id>
+            <url>https://repo.embabel.com/artifactory/libs-snapshot/</url>
+        </snapshotRepository>
     </distributionManagement>
 
 </project>
