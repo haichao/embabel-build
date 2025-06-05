@@ -49,6 +49,8 @@
         <maven-surefire-plugin.version>3.1.2</maven-surefire-plugin.version>
         <maven-dependency-plugin.version>3.8.1</maven-dependency-plugin.version>
         <maven-enforcer-plugin.version>3.4.1</maven-enforcer-plugin.version>
+        <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
+        <build-helper-maven-plugin.version>3.4.0</build-helper-maven-plugin.version>
         <flatten-maven-plugin.version>1.7.0</flatten-maven-plugin.version>
         <license-maven-plugin.version>2.5.0</license-maven-plugin.version>
         <git-commit-id-plugin.version>4.9.10</git-commit-id-plugin.version>
@@ -305,6 +307,47 @@
                             <configuration>
                                 <outputFile>${project.basedir}/docs/licenses/dependency-tree.txt</outputFile>
                                 <outputType>text</outputType>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>${build-helper-maven-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <id>add-kotlin-and-java-sources</id>
+                            <phase>generate-sources</phase>
+                            <goals>
+                                <goal>add-source</goal>
+                            </goals>
+                            <configuration>
+                                <sources>
+                                    <source>src/main/kotlin</source>
+                                    <source>src/main/java</source>
+                                </sources>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+            
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>${maven-source-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <id>attach-sources</id>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>jar-no-fork</goal>
+                            </goals>
+                            <configuration>
+                                <attach>true</attach>
+                                <excludeResources>false</excludeResources>
+                                <includePom>false</includePom>
                             </configuration>
                         </execution>
                     </executions>
