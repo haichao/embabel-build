@@ -17,7 +17,7 @@
         <!-- Apache Commons -->
         <apache-commons-text.version>1.10.0</apache-commons-text.version>
         <!-- AI Frameworks -->
-        <spring-ai.version>1.0.0-M8</spring-ai.version>
+        <spring-ai.version>1.0.0</spring-ai.version>
         <spring-ai-mcp.version>0.5.1</spring-ai-mcp.version>
         <!-- Kotlin Coroutines -->
         <kotlin-coroutines.version>1.10.1</kotlin-coroutines.version>
