@@ -1,0 +1,12 @@
+.idea
+
+
+/target/**
+*/target/**
+*/*/target/**
+*/*/*/target/**
+
+.idea/workspace.xml
+
+**/*.log
+.direnv/
