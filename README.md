@@ -232,6 +232,9 @@ The project is maintained by the Embabel development team:
 - Rod Johnson (Founder and Project Lead)
 - Alex Hein-Heifetz (Lead)
 - Igor Dayen (Lead)
+- Jim Clark (Lead)
+- Arjen Poutsma (Lead)
+- Jaspser Blues (Lead)
 
 ## Links
 
