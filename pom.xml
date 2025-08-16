@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.embabel.build</groupId>
     <artifactId>embabel-build-parent</artifactId>
-    <version>0.1.1-SNAPSHOT</version>
+    <version>0.1.1-7Z</version>
     <packaging>pom</packaging>
     <name>Embabel Build Parent</name>
     <description>Embabel build parent pom, managing plugins and dependencies for all Embabel projects
@@ -683,17 +683,6 @@
             </releases>
         </repository>
     </repositories>
-
-    <distributionManagement>
-        <repository>
-            <id>embabel-releases</id>
-            <url>https://repo.embabel.com/artifactory/libs-release/</url>
-        </repository>
-        <snapshotRepository>
-            <id>embabel-snapshots</id>
-            <url>https://repo.embabel.com/artifactory/libs-snapshot/</url>
-        </snapshotRepository>
-    </distributionManagement>
 
 
 </project>
