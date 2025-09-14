@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.embabel.build</groupId>
     <artifactId>embabel-build-dependencies</artifactId>
-    <version>0.1.1-7Z</version>
+    <version>0.1.3-7Z</version>
     <name>Embabel Build BOM</name>
     <packaging>pom</packaging>
     <description>BOM with Embabel Build Dependencies</description>
@@ -38,7 +38,8 @@
         <!-- Names Generator -->
         <moby-names-generator.version>20.10.1-r0</moby-names-generator.version>
         <!-- Unit and Integration Testing -->
-        <testcontainers.version>1.20.5</testcontainers.version>
+        <testcontainers.version>1.21.3</testcontainers.version>
+        <mockito.version>5.18.0</mockito.version>
         <springmockk.version>4.0.2</springmockk.version>
         <!-- Build Plugins -->
         <flatten-maven-plugin.version>1.7.0</flatten-maven-plugin.version>
@@ -256,6 +257,13 @@
                 <groupId>org.testcontainers</groupId>
                 <artifactId>neo4j</artifactId>
                 <version>${testcontainers.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${mockito.version}</version>
                 <scope>test</scope>
             </dependency>
 
